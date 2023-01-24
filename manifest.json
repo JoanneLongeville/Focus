@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "Focus",
+    "description": "This extension is a tab manager",
+    "version": "1.0.1",
+    "permissions": [
+        "scripting",
+        "activeTab",
+        "tabs",
+        "notifications"
+    ],
+
+    "action": {
+        "default_icon": "img/do.png",
+        "default_title": "Focus",
+        "default_popup": "html/popup.html"
+    },
+
+    "icons":{
+        "64": "img/do.png"
+    },
+
+    "host_permissions":[
+        "http://*/*",
+        "https://*/*"
+    ],
+    
+    "background": {
+        "service_worker": "js/background.js"
+    }
+}
